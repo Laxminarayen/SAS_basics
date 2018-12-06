@@ -1,0 +1,11 @@
+data dates1;
+month_field = 7;
+day_field = 17;
+year_field = 1968;
+my_birthday = mdy(month_field,day_field,year_field);
+a = date();
+b = today();
+c = time();
+d = datetime();
+format my_birthday worddate. a date. b mmddyy8. c time10.2 d datetime16.;
+run;
